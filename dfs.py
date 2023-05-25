@@ -9,8 +9,10 @@ def dfs(graph, begin, visited=None):
     print(begin)
     i = 0
     for next in graph[begin] - visited:
-        dfs(graph, next, visited)
-        i +=1
+        try:
+            dfs(graph, next, visited)
+            i +=1
+        except: print('none Value Exception')
     return visited, i
 
 
