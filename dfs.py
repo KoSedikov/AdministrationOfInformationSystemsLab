@@ -7,10 +7,11 @@ def dfs(graph, begin, visited=None):
     visited.add(begin)
 
     print(begin)
-
+    i = 0
     for next in graph[begin] - visited:
         dfs(graph, next, visited)
-    return visited
+        i +=1
+    return visited, i
 
 
 graph = {'0': set(['4', '2']),
