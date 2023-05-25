@@ -10,9 +10,9 @@ def dfs(graph, begin, visited=None):
     print(begin)
     i = 0
     for next in graph[begin] - visited:
-        try: # обработка исключений
+        try: # обработка исключений123
             dfs(graph, next, visited)
-            i +=1 # Подсчет проходов.
+            i +=1 # Подсчет проходов.123
         except: print('none Value Exception')
     return visited, i
 
