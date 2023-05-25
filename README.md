@@ -1,1 +1,2 @@
 # AdministrationOfInformationSystemsLab
+Реализация алгоритма прохода графа в глубину
